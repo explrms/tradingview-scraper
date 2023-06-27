@@ -48,7 +48,7 @@ class TradingViewAPI:
 def main():
     api = TradingViewAPI()
     try:
-        token = api.login(username='imExpelliarmus@yandex.ru', password='MyPass1821')
+        token = api.login(username='LOGIN_HERE', password='PASSWORDHERE')
     except Require2FA:
         code = input('Введите код 2fa: ')
         token = api.enter_2fa(code)
